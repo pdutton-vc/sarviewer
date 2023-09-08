@@ -62,6 +62,8 @@ yum install mutt
 * Network interface statistics are generated for eth0 by default. Change the variable **network_interface** as needed in **sarviewer.properties** file.
 * The repo can be used in two modes, depending on your needs. See below.
 
+copy sarviewer.properties.default to sarviewer.properties and edit as needed
+
 ### Mode 1: Begin collecting data and generate graphs
 
 * Useful for stress tests. Launch the **data_collector.sh** script if you want to begin collecting data. Specify the number of samples and interval to take each sample. Notice that whenever you want you can cancel the collector with *Ctrl+C*, interrumpting the collection of data. If it is cancelled you will need to launch the script **plotter.sh** manually. The data and graphs generated will overwrite the samples given in this repo in **data/** and **graphs/** folder respectively.
